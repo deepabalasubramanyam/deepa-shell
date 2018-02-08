@@ -1,0 +1,11 @@
+#!/bin/bash
+#this script copies /var/log/messages to /var/log/messages.old
+
+
+sudo cp /var/log/messages /var/log/messages.old
+cat /dev/null > /var/log/messages
+echo 'file copied from new to old'
+exit 0
+
+
+
