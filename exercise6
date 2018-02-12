@@ -1,0 +1,35 @@
+#!/bin/bash
+while true ; do
+	trap "echo NOPE" int
+	
+	pinghost()
+	{
+	echo which host do u want to ping
+	read HOSTNAME
+	ping -c 1 $HOSTNAME
+	}
+
+	echo "select option"
+	select task in 'change password', 'monitor disk space', 'ping a host', 'logout'
+	
+	do
+		case $REPLY in
+           	1 ) TASK=passwd;;
+		2 ) TASK="df -h";;
+		3 ) TASK=pinghost;;
+		4 ) TASK=exit;;
+		esac
+
+
+
+	if [ -n "task" ]
+	then 
+		$TASK
+		break
+	else
+		echo invalid choice #, try again
+	fi
+
+	done
+	done
+ 
