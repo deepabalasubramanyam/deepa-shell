@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#extract username
+
+for i in $(cat ldapusers)
+do
+	USER=${i%%,*}
+	USER=${USER#*=}	
+	echo $USER >> users
+done
+
+
+#show that user creation will work
+
+for j in $(cat exercise5)
+do
+	echo useradd $j
+done
+exit 0
+
