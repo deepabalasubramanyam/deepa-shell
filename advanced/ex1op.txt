@@ -1,0 +1,20 @@
+./advbash1.sh syslog
+root                42   0.0  0.0  4350604   1996   ??  Ss   12:04PM   0:04.20 /usr/sbin/syslogd
+deepa             1708   0.0  0.0  4277564   1216 s000  S+    5:10PM   0:00.00 /bin/bash ./advbash1.sh syslog
+All good.
+deepa             1708   1.1  0.0  4277564   1220 s000  S+    5:10PM   0:00.00 /bin/bash ./advbash1.sh syslog
+root                42   0.0  0.0  4350604   1996   ??  Ss   12:04PM   0:04.20 /usr/sbin/syslogd
+All good.
+root                42   0.0  0.0  4350604   1996   ??  Ss   12:04PM   0:04.20 /usr/sbin/syslogd
+deepa             1708   0.0  0.0  4279612   1248 s000  S+    5:10PM   0:00.01 /bin/bash ./advbash1.sh syslog
+All good.
+root                42   0.0  0.0  4351128   2008   ??  Ss   12:04PM   0:04.21 /usr/sbin/syslogd
+deepa             1708   0.0  0.0  4279612   1248 s000  S+    5:10PM   0:00.01 /bin/bash ./advbash1.sh syslog
+All good.
+root                42   0.0  0.0  4350604   1996   ??  Ss   12:04PM   0:04.21 /usr/sbin/syslogd
+deepa             1708   0.0  0.0  4280636   1260 s000  S+    5:10PM   0:00.01 /bin/bash ./advbash1.sh syslog
+All good.
+root                42   0.0  0.0  4351128   2008   ??  Ss   12:04PM   0:04.21 /usr/sbin/syslogd
+deepa             1708   0.0  0.0  4280636   1260 s000  S+    5:10PM   0:00.01 /bin/bash ./advbash1.sh syslog
+All good.
+

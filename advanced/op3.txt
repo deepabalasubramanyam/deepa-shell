@@ -1,0 +1,12 @@
+phDatas-MacBook-Pro:advanced deepa$ ./advbash3.sh
+./advbash3.sh: line 1: !/bin/bash: No such file or directory
+Enter a letter: 
+w
+"a" not selected.
+Enter a string: 
+hi
+Nothing found.
+Enter a number: 
+56
+Greater than 19 or equal to 0
+
