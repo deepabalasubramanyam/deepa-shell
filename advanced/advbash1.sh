@@ -23,18 +23,18 @@ fi
 
 # Run without stopping to do the monitoring task.
 ## Verify that $SERVICE is running.
-if ps aux | grep $SERVICE | grep -v grep | grep -v adv_exercise1
+if ps aux | grep $SERVICE | grep -v grep | grep -v advbash1
 then
   echo All good.
 else
   echo $SERVICE could not be found as a process.
   echo Make sure that $SERVICE is running, and try again.
-  echo The commnand '"ps aux | grep $SERVICE | grep -v grep | grep -v adv_exercise1"' should show the service up and running.
+  echo The commnand '"ps aux | grep $SERVICE | grep -v grep | grep -v advbash1"' should show the service up and running.
   exit 4
 fi
 
 ## Monitor $SERVICE.
-while ps aux | grep $SERVICE | grep -v grep | grep -v adv_exercise1
+while ps aux | grep $SERVICE | grep -v grep | grep -v advbash1
 do
   echo All good.
   sleep 5
@@ -46,7 +46,7 @@ done
 service $SERVICE start
 
 ## Write message to syslog.
-logger adv_exercise1: $SERVICE restarted
+logger advbash1: $SERVICE restarted
 
 ## Send email to root user.
-mail -s "adv_exercise1: $SERVICE restarted at $(date +%d-%m-%Y %H:%M)" root < .
+mail -s "advbash1: $SERVICE restarted at $(date +%d-%m-%Y %H:%M)" root < .
